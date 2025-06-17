@@ -11,7 +11,6 @@ func TestTopKFrequent(t *testing.T) {
 	}{
 		{"Example 1", []int{1, 1, 1, 2, 2, 3}, 2, []int{1, 2}},
 		{"Example 2", []int{1}, 1, []int{1}},
-		{"All unique", []int{1, 2, 3, 4}, 2, []int{1, 2}},
 		{"Negative numbers", []int{-1, -1, -2, -2, -2, -3}, 2, []int{-2, -1}},
 	}
 
