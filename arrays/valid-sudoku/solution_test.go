@@ -37,7 +37,7 @@ func TestIsValidSudoku(t *testing.T) {
 
 	for _, tc := range testCases {
 		t.Run(tc.name, func(t *testing.T) {
-			result := IsValidSudoku(tc.board)
+			result := IsValidSudokuOptimezed(tc.board)
 			if result != tc.expected {
 				t.Errorf("%s: expected %v, got %v", tc.name, tc.expected, result)
 			}

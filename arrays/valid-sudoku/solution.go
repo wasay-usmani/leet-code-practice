@@ -5,12 +5,9 @@ import "unicode"
 // IsValidSudoku returns true if the given 9x9 board is a valid Sudoku.
 func IsValidSudoku(board [][]byte) bool {
 	transposed := make([][]byte, len(board))
+	box := make([][]byte, len(board))
 	for i := range transposed {
 		transposed[i] = make([]byte, len(board[0]))
-	}
-
-	box := make([][]byte, len(board))
-	for i := range box {
 		box[i] = make([]byte, len(board[0]))
 	}
 
@@ -45,6 +42,29 @@ func IsValidSudoku(board [][]byte) bool {
 			visitedCol[box[i][j]] = struct{}{}
 		}
 	}
-	
+
+	return true
+}
+
+func IsValidSudokuOptimezed(board [][]byte) bool {
+	var rows, cols, boxes [9][9]bool
+	for i := 0; i < 9; i++ {
+		for j := 0; j < 9; j++ {
+			val := board[i][j]
+			if val == '.' {
+				continue
+			}
+
+			num := val - '1'
+			boxIdx := (i/3)*3 + (j / 3)
+			if rows[i][num] || cols[j][num] || boxes[boxIdx][num] {
+				return false
+			}
+
+			rows[i][num] = true
+			cols[j][num] = true
+			boxes[boxIdx][num] = true
+		}
+	}
 	return true
 }
