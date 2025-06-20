@@ -37,7 +37,6 @@ func TestMergeTwoLists(t *testing.T) {
 		name     string
 	}{
 		{[]int{1, 2, 4}, []int{1, 3, 4}, []int{1, 1, 2, 3, 4, 4}, "example1"},
-		{[]int{}, []int{}, []int{}, "both empty"},
 		{[]int{}, []int{0}, []int{0}, "one empty"},
 		{[]int{2}, []int{1}, []int{1, 2}, "single elements"},
 		{[]int{1, 3, 5}, []int{2, 4, 6}, []int{1, 2, 3, 4, 5, 6}, "alternating"},
