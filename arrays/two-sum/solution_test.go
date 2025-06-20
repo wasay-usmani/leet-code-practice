@@ -1,4 +1,4 @@
-package twosum
+package arrays
 
 import "testing"
 

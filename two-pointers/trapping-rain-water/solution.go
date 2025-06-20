@@ -1,4 +1,4 @@
-package trappingrainwater
+package twopointers
 
 func Trap(height []int) int {
 	left, right := 0, len(height)-1

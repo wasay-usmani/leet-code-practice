@@ -1,4 +1,4 @@
-package validanagram
+package arrays
 
 // IsAnagram returns true if t is an anagram of s.
 func IsAnagram(s string, t string) bool {

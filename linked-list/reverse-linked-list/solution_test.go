@@ -1,4 +1,4 @@
-package reverselinkedlist
+package linkedlist
 
 import (
 	"reflect"

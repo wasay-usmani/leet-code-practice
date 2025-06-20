@@ -1,4 +1,4 @@
-package longestsubstringwithoutrepeatingcharacters
+package slidingwindow
 
 // LengthOfLongestSubstring returns the length of the longest substring without repeating characters.
 func LengthOfLongestSubstring(s string) int {

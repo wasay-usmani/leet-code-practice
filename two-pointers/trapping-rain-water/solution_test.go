@@ -1,4 +1,4 @@
-package trappingrainwater
+package twopointers
 
 import "testing"
 

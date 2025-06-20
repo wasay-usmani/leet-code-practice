@@ -1,4 +1,4 @@
-package longestconsecutivesequence
+package arrays
 
 import "slices"
 

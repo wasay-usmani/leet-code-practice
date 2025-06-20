@@ -1,4 +1,4 @@
-package validsudoku
+package arrays
 
 import "testing"
 

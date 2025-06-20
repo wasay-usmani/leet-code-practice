@@ -1,4 +1,4 @@
-package twosum
+package arrays
 
 // TwoSum returns indices of the two numbers such that they add up to target.
 func TwoSum(nums []int, target int) []int {

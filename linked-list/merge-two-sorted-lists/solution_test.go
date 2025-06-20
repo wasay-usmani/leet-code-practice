@@ -1,4 +1,4 @@
-package mergetwosortedlists
+package linkedlist
 
 import (
 	"reflect"

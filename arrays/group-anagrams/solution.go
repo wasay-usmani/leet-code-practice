@@ -1,4 +1,4 @@
-package groupanagrams
+package arrays
 
 import (
 	"sort"

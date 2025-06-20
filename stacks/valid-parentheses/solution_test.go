@@ -1,4 +1,4 @@
-package validparentheses
+package stack
 
 import "testing"
 
