@@ -1,4 +1,4 @@
-package longestsubstringwithoutrepeatingcharacters
+package slidingwindow
 
 import "testing"
 

@@ -1,4 +1,4 @@
-package containsduplicate
+package arrays
 
 import "testing"
 

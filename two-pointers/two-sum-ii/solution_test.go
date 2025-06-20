@@ -1,4 +1,4 @@
-package twosumii
+package twopointers
 
 import "testing"
 

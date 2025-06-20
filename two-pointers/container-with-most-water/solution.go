@@ -1,4 +1,4 @@
-package containerwithmostwater
+package twopointers
 
 // MaxArea returns the maximum area of water a container can store.
 func MaxArea(height []int) int {

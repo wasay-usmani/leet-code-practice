@@ -1,4 +1,4 @@
-package threesum
+package twopointers
 
 import "sort"
 

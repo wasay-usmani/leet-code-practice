@@ -1,4 +1,4 @@
-package containerwithmostwater
+package twopointers
 
 import "testing"
 

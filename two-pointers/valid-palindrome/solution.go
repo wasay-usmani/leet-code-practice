@@ -1,4 +1,4 @@
-package validpalindrome
+package twopointers
 
 import (
 	"unicode"

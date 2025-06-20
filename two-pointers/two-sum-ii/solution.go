@@ -1,4 +1,4 @@
-package twosumii
+package twopointers
 
 // TwoSum returns the 1-based indices of the two numbers such that they add up to target.
 func TwoSum(numbers []int, target int) []int {

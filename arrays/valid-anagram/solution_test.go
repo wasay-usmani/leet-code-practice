@@ -1,4 +1,4 @@
-package validanagram
+package arrays
 
 import "testing"
 

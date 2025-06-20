@@ -1,4 +1,4 @@
-package encodedecodestrings
+package arrays
 
 import (
 	"strings"
