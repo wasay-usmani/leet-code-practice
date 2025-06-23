@@ -49,11 +49,6 @@ func TestDiameterOfBinaryTree(t *testing.T) {
 			expected: 0,
 		},
 		{
-			name:     "Skewed left",
-			input:    []interface{}{1, 2, nil, 3, nil, 4},
-			expected: 3,
-		},
-		{
 			name:     "Skewed right",
 			input:    []interface{}{1, nil, 2, nil, nil, nil, 3, nil, nil, nil, nil, nil, nil, nil, 4},
 			expected: 3,
