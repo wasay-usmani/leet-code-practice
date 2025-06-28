@@ -9,24 +9,22 @@ type TreeNode struct {
 
 // lowestCommonAncestor returns the lowest common ancestor of p and q in the BST.
 func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
-	if root == nil {
-		return nil
-	}
-	
-	if p == q || p == root || q == root {
-		return root
-	}
+	if root == nil{
+        return nil
+    }
+    if p == q || p == root || q == root {
+        return root
+    }
+    left := lowestCommonAncestor(root.Left, p, q)
+    right := lowestCommonAncestor(root.Right, p, q)
 
-	left := lowestCommonAncestor(root.Left, p, q)
-	right := lowestCommonAncestor(root.Right, p, q)
-
-	if left != nil && right != nil {
-		return root
-	} else {
-		if left != nil {
-			return left
-		}
-		return right
-	}
+    if left != nil && right != nil {
+        return root
+    }else{
+        if left != nil{
+            return left
+        }
+        return right
+    }
 
 }

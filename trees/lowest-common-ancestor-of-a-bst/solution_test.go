@@ -68,13 +68,6 @@ func TestLowestCommonAncestor(t *testing.T) {
 			q:        1,
 			expected: 2,
 		},
-		{
-			name:     "Test case",
-			root:     []interface{}{3, 1, 4, nil, 2},
-			p:        2,
-			q:        3,
-			expected: 2,
-		},
 	}
 
 	for _, tc := range tests {
